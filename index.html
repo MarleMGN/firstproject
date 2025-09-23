@@ -4,11 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
 </head>
 <body>
     <section>
         <nav>
-            <img src="/Users/marlemgadia/Downloads/HTML Practise Assets/FES.svg" alt="FES image">
+            <img src="./Assets/FES.svg" class="logo" alt="FES image">
             <ul>
                 <li><a href="#about">About</a></li>
                 <li><a href="#discord">Discord</a></li>
@@ -16,36 +17,41 @@
             </ul>
         </nav>
         <header>
-            <div>
-               <h1>Best place to learn frontend</h1>
-               <p>Go from being an absolute beginner to pro with a simplified process</p> 
-               <button>Start now</button>
+            <div class="row">
+                <div>
+                    <h1>Best place to learn frontend</h1>
+                    <p class="subheader">Go from being an absolute beginner to pro with a simplified process</p> 
+                    <button>Start now</button>
+                </div>
+                    <figure>
+                        <img src="./Assets/laptop.png" alt="Laptop image">
+                    </figure> 
             </div>
-            <figure>
-                <img src="/Users/marlemgadia/Downloads/HTML Practise Assets/laptop.png" alt="Laptop image">
-            </figure> 
         </header>
     </section>
     
     <main>
-        <section id="about"></section>
+        <section id="about">
             <h2>About</h2>
-            <div>
-                <p>
+            <div class="section__description">
+            <div class="section__description--wrapper">
+                <p class="section__description--para">
                     Lorem ipsum dolor, sit amet consectetur adipisicing elit. Praesentium fugit explicabo, cum ea nostrum in libero dolores quod itaque consectetur adipisci doloribus sapiente expedita quam aliquid omnis eum excepturi officia!
                 </p>
-                <p>
+                <p class="section__description--para">
                     Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aut eaque omnis quod provident tenetur nisi sit ut necessitatibus vero possimus deleniti ad rerum ullam, harum sequi cum totam minima accusamus?
                 </p>
             </div>
-            <figure>
-                <img src="/Users/marlemgadia/Downloads/HTML Practise Assets/about.jpg" alt="About image" />
+            <figure class="about__img--wrapper">
+                <img src="./Assets/about.jpg" alt="About image" />
             </figure>
+            </div>
+        </section>
             
         <section id="discord"></section>
             <h2>Discord</h2>
             <figure>
-                <img src="/Users/marlemgadia/Downloads/HTML Practise Assets/discord.png" alt="Discord image" />
+                <img src="./Assets/discord.png" alt="Discord image" />
             </figure>
             <div>
                 <p>
@@ -66,7 +72,6 @@
     </main>
 
     <footer>
-        <p>Hi hi</p>
         <img src="logo.png" alt="Logo" />
         <div>
             <a href="#about">About</a>
