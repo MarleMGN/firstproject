@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="./style.css">
+    
 </head>
 <body>
     <section>
@@ -18,10 +19,10 @@
         </nav>
         <header>
             <div class="row">
-                <div>
+                <div class="home__description">
                     <h1>Best place to learn frontend</h1>
                     <p class="subheader">Go from being an absolute beginner to pro with a simplified process</p> 
-                    <button>Start now</button>
+                    <button class="home__description--button">Start now</button>
                 </div>
                     <figure>
                         <img src="./Assets/laptop.png" alt="Laptop image">
@@ -33,6 +34,7 @@
     <main>
         <section id="about">
             <h2>About</h2>
+            <div class="row">
             <div class="section__description">
             <div class="section__description--wrapper">
                 <p class="section__description--para">
@@ -46,37 +48,44 @@
                 <img src="./Assets/about.jpg" alt="About image" />
             </figure>
             </div>
+            </div>
         </section>
             
-        <section id="discord"></section>
+        <section id="discord">
             <h2>Discord</h2>
-            <figure>
+            <div class="row">
+            <div class="section__description">
+            <figure class="about__img--wrapper">
                 <img src="./Assets/discord.png" alt="Discord image" />
             </figure>
-            <div>
-                <p>
+            <div class="section__description--wrapper">
+                <p class="section__description--para">
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque suscipit qui cumque minima eos quae excepturi pariatur, mollitia ab nihil doloremque enim, vero rerum consectetur ratione animi deleniti ea quod.
                 </p>
-                <p>
+                <p class="section__description--para">
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint veniam eum earum temporibus architecto saepe, nostrum dolorum molestiae iure nobis, harum dolore, inventore velit excepturi laboriosam. Quasi quis non at!
                 </p>
             </div>
+            </div>
+            </div>
+        </section>
         <section id="contact"></section>
             <h2>Contact</h2>
             <form>
                 <span>Email</span>
-                <input type="text" placeholder="jane@example.com">
+                <input type="email" placeholder="jane@example.com">
                 <span>Message</span>
-                <textarea type="text" placeholder="jane@example.com"></textarea>
+                <textarea type="text" placeholder="Cool website, let's get connected"></textarea>
+                <button>Contact Us!</button>
             </form>
     </main>
 
     <footer>
-        <img src="logo.png" alt="Logo" />
-        <div>
-            <a href="#about">About</a>
-            <a href="#discord">Discord</a>
-            <a href="#contact">Contact</a>
+        <img class="footer__logo" src="/Assets/FES.svg" alt="Logo" />
+        <div class="footer__links">
+            <a class="footer__link" href="#about">About</a>
+            <a class="footer__link" href="#discord">Discord</a>
+            <a class="footer__link" href="#contact">Contact</a>
         </div>
         <p>Copyright Frontend Simplified</p>
     </footer>
